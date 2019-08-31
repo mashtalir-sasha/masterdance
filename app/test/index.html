@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Школа танцев «Master Dance» для детей и взрослых на Дружбы Народов</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="test/style.css">
+	<link rel="stylesheet" href="test/libs/jquery-ui-slider/jquery-ui.css">
+	<script src="test/libs/jquery-3.2.1.min.js"></script>
+	<script src="test/libs/jquery.bxslider.min.js"></script>
+	<script src="test/libs/jquery.maskedinput.min.js"></script>
+	<script src="test/libs/is.mobile.js"></script>
+	<script src="test/libs/jquery.form.js"></script>
+	<script src="test/libs/jquery.validate.js"></script>
+	<script src="test/libs/jquery-ui-slider/jquery-ui.js"></script>
+
+</head>
+<body>
+<form class="portable-test-wrapper">
+	<input type="hidden" name="title" value="Ответы на вопросы">
+	<!-- LOGO + TITLE START -->
+	<div class="header-line">
+		<div class="form-container">
+			<img src="img/logo.png" alt="logo" class="header-line__logo">
+			<h2 class="header-line__title">
+				Узнай за 1 минуту стоимость, расписание<br>занятий и какой из 16 стилей танца<br>подойдет именно тебе
+			</h2>
+		</div>
+	</div>
+	<!-- LOGO + TITLE END -->
+
+	<!-- PROGRESS LINE START -->
+	<div class="progress-line">
+		<div class="main-progress">
+			<div class="main-progress__extender"></div>
+			<!-- STEPS TEXT START -->
+			<div class="main-progress__text">
+				<b>Осталось ответить на 4 вопроса,</b> чтобы узнать расписание и стоимость
+			</div>
+			<!-- STEPS TEXT END -->
+			<!-- STEPS TEXT START -->
+			<div class="main-progress__text">
+				<b>Осталось ответить на 3 вопроса,</b> чтобы узнать расписание и стоимость
+			</div>
+			<!-- STEPS TEXT END -->
+			<!-- STEPS TEXT START -->
+			<div class="main-progress__text">
+				<b>Осталось ответить на 2 вопроса,</b> чтобы узнать расписание и стоимость
+			</div>
+			<!-- STEPS TEXT END -->
+<!-- STEPS TEXT START -->
+			<div class="main-progress__text">
+				<b>Осталось ответить на 1 вопрос,</b> чтобы узнать расписание и стоимость
+			</div>
+			<!-- STEPS TEXT END -->
+			<!-- STEPS TEXT START -->
+			<div class="main-progress__text">
+				<b>Тест пройден.</b> Заполните форму ниже, чтобы узнать расписание и стоимость
+			</div>
+			<!-- STEPS TEXT END -->
+		</div>
+		<div class="form-container">
+			<div class="step">
+				<div class="step__text">Шаг <span>1</span></div>
+				<div class="step__extender"></div>
+			</div>
+		</div>
+	</div>
+	<!-- PROGRESS LINE END -->
+
+	<!-- STEPS START -->
+	<div class="form-container">
+		<div class="test-slider">
+			<!-- ONE-STEP START -->
+			<div class="step-slide step-slide-1">
+				<h3 class="step-slide__title">
+				Сколько Вам/ребенку лет?
+				</h3>
+				<div class="step-slide__grid">
+					<!-- ONE-ITEM START -->
+					<label for="step1-1" class="pick-item">
+					    <input class="pick-item__input" type="radio" name="step1" id="step1-1" value="3-5 лет">
+						<div class="pick-item__label">3-5 лет</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step1-2" class="pick-item">
+					    <input class="pick-item__input" type="radio" name="step1" id="step1-2" value="6-8 лет">
+						<div class="pick-item__label">6-8 лет</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step1-3" class="pick-item">
+					    <input class="pick-item__input" type="radio" name="step1" id="step1-3" value="9-12 лет">
+						<div class="pick-item__label">9-12 лет</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step1-4" class="pick-item">
+					    <input class="pick-item__input" type="radio" name="step1" id="step1-4" value="13-16 лет">
+						<div class="pick-item__label">13-16 лет</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step1-5" class="pick-item">
+					    <input class="pick-item__input" type="radio" name="step1" id="step1-5" value="16-25 лет">
+						<div class="pick-item__label">16-25 лет</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step1-6" class="pick-item">
+					    <input class="pick-item__input" type="radio" name="step1" id="step1-6" value="25+ лет">
+						<div class="pick-item__label">25+ лет</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step1-7" class="pick-item">
+					    <input class="pick-item__input" type="radio" name="step1" id="step1-7" value="35+ лет">
+						<div class="pick-item__label">35+ лет</div>
+					</label>
+					<!-- ONE-ITEM END -->
+
+					<div id="next1" class="btn-next-container"></div>
+				</div>
+				<!-- <input type="hidden" class="hidden-input-1" name="step1"> -->
+			</div>
+			<!-- ONE-STEP END -->
+
+
+			<!-- ONE-STEP START -->
+			<div class="step-slide step-slide-2">
+				<h3 class="step-slide__title">
+				Вы ранее занимались танцами?
+				</h3>
+				<div class="step-slide__grid">
+
+					<!-- ONE-ITEM START -->
+					<label for="step2-1" class="pick-item">
+					    <input class="pick-item__input" type="radio" name="step2" id="step2-1" value="Нет, никогда">
+						<div class="pick-item__label">Нет, никогда</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step2-2" class="pick-item">
+					    <input class="pick-item__input" type="radio" name="step2" id="step2-2" value="Опыт до 1 года">
+						<div class="pick-item__label">Опыт до 1 года</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step2-3" class="pick-item">
+					    <input class="pick-item__input" type="radio" name="step2" id="step2-3" value="Опыт 1-3 года">
+						<div class="pick-item__label">Опыт 1-3 года</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step2-4" class="pick-item">
+					    <input class="pick-item__input" type="radio" name="step2" id="step2-4" value="Более 3 лет">
+						<div class="pick-item__label">Более 3 лет</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					
+
+					<div id="next2" class="btn-next-container"></div>
+				</div>
+				<input type="hidden" class="hidden-input-2" name="step2">
+			</div>
+			<!-- ONE-STEP END -->
+
+			<!-- ONE-STEP START -->
+			<div class="step-slide step-slide-3">
+				<h3 class="step-slide__title">
+					Какие танцы Вам больше всего нравятся?
+				</h3>
+				<div class="step-slide__grid">
+					<!-- ONE-ITEM START -->
+					<label for="step3-1" class="pick-item">
+					    <div class="pick-item__img">
+					    	<div class="pick-item__help pick-item__help_right">
+					    		<div class="pick-item__help-trigger"></div>
+					    		<div class="pick-item__help-content">Baby Dance (3-4 года), Junior Dance (5-6 лет)</div>
+					    	</div>
+							<img src="test/img/1/1.jpg" alt="item">
+						</div>
+						<input class="pick-item__input" type="radio" name="step3" id="step3-1" value="Детская хореография">
+						<div class="pick-item__label">Детская хореография (3-6 лет)</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step3-2" class="pick-item">
+						<div class="pick-item__img">
+							<div class="pick-item__help pick-item__help_right">
+					    		<div class="pick-item__help-trigger"></div>
+					    		<div class="pick-item__help-content">Hip-Hop (10-15 лет), K-pop (10-15 лет), Reggae Dancehall (16-45 лет)</div>
+					    	</div>
+							<img src="test/img/1/2.jpg" alt="item">
+						</div>
+						<input class="pick-item__input" type="radio" name="step3" id="step3-2" value="Уличные стили">
+						<div class="pick-item__label">Уличные стили</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step3-3" class="pick-item">
+						<div class="pick-item__img">
+							<img src="test/img/1/3.jpg" alt="item">
+						</div>
+						<input class="pick-item__input" type="radio" name="step3" id="step3-3" value="Современная хореография, 7-13 лет">
+						<div class="pick-item__label">Современная хореография (7-13 лет)</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step3-4" class="pick-item">
+						<div class="pick-item__img">
+							<div class="pick-item__help pick-item__help_right">
+					    		<div class="pick-item__help-trigger"></div>
+					    		<div class="pick-item__help-content">Booty bake, Twerk 15+, Strip Dance 16+, Lady Dance 16+</div>
+					    	</div>
+							<img src="test/img/1/4.jpg" alt="item">
+						</div>
+						<input class="pick-item__input" type="radio" name="step3" id="step3-4" value="Lady Dance">
+						<div class="pick-item__label">Lady Dance</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step3-5" class="pick-item">
+						<div class="pick-item__img">
+							<img src="test/img/1/5.jpg" alt="item">
+						</div>
+						<input class="pick-item__input" type="radio" name="step3" id="step3-5" value="Восточные танцы">
+						<div class="pick-item__label">Восточные танцы (от 8 до 45 лет)</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step3-6" class="pick-item">
+						<div class="pick-item__img">
+							<div class="pick-item__help pick-item__help_right">
+					    		<div class="pick-item__help-trigger"></div>
+					    		<div class="pick-item__help-content">Фитнес-латина, Latina Lady’s Style</div>
+					    	</div>
+							<img src="test/img/1/6.jpg" alt="item">
+						</div>
+						<input class="pick-item__input" type="radio" name="step3" id="step3-6" value="Латина 16+">
+						<div class="pick-item__label">Латина 16+</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step3-7" class="pick-item">
+						<div class="pick-item__img">
+							<div class="pick-item__help pick-item__help_right">
+					    		<div class="pick-item__help-trigger"></div>
+					    		<div class="pick-item__help-content">Фитнес-латина, Пилатес, Стретчинг, Фитнес+пресс</div>
+					    	</div>
+							<img src="test/img/1/7.jpg" alt="item">
+						</div>
+						<input class="pick-item__input" type="radio" name="step3" id="step3-7" value="Фитнес 16+">
+						<div class="pick-item__label">Фитнес 16+</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step3-8" class="pick-item">
+						<div class="pick-item__img">
+							<img src="test/img/1/9.jpg" alt="item">
+						</div>
+						<input class="pick-item__input" type="radio" name="step3" id="step3-8" value="Еще не определились!">
+						<div class="pick-item__label">Еще не определились!</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					
+					
+					<div id="next3" class="btn-next-container"></div>
+				</div>
+				<input type="hidden" class="hidden-input-3" name="step3">
+			</div>
+			<!-- ONE-STEP END -->
+
+			<!-- ONE-STEP START -->
+			<div class="step-slide step-slide-4">
+				<h3 class="step-slide__title">
+					Сколько раз в месяц хотели бы заниматься?
+				</h3>
+				<div class="step-slide__grid">
+					<!-- ONE-ITEM START -->
+					<label for="step4-1" class="pick-item">
+						<input class="pick-item__input" type="radio" name="step4" id="step4-1" value="4 занятия в месяц">
+						<div class="pick-item__label">4 занятия в месяц</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step4-2" class="pick-item">
+						<input class="pick-item__input" type="radio" name="step4" id="step4-2" value="8 занятий в месяц">
+						<div class="pick-item__label">8 занятий в месяц</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step4-3" class="pick-item">
+						<input class="pick-item__input" type="radio" name="step4" id="step4-3" value="12 занятий в месяц">
+						<div class="pick-item__label">12 занятий в месяц</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step4-4" class="pick-item">
+						<input class="pick-item__input" type="radio" name="step4" id="step4-4" value="Еще точно не знаю, нужна помощь в подборе!">
+						<div class="pick-item__label">Еще точно не знаю, нужна помощь в подборе!</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					
+					<div id="next4" class="btn-next-container"></div>
+				</div>
+				<input type="hidden" class="hidden-input-4" name="step4">
+			</div>
+			<!-- ONE-STEP END -->
+
+
+			<!-- ONE-STEP START -->
+			<div class="step-slide bg-mockup">
+				<h3 class="step-slide__title">
+					Спасибо за ответы! За Вашим номером телефона будет закреплены:
+				</h3>
+				<div class="step-slide__grid">
+					<h4 class="step-slide__discount">· Подборку стилей танца под тебя<br>· Стоимость абонементов и расписание занятий<br>· Информацию о преподавателях и методике обучения</h4>
+					<div class="last-step-form">
+						<input class="last-step-form__input" type="text" name="name" placeholder="Введите Ваше имя" required style="background: #EFEFEF url(test/img/name.png) no-repeat left 20px center;">
+						<input class="last-step-form__input" type="text" name="phone" placeholder="Введите Ваш номер" required>
+						<button class="last-step-form__button btn-shine"><span>Получить расписание и цены</span></button>
+						<div class="last-step-form__accept">Нажимая на кнопку, вы принимаете <a href="privacy.html" target="_blank">Положение и Согласие</a> на обработку персональных данных.</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- ONE-STEP END -->
+
+
+			<!-- ONE-STEP START -->
+			<div class="step-slide">
+			</div>
+			<!-- ONE-STEP END -->
+
+			<!-- ONE-STEP START -->
+			<div class="step-slide last">
+				<!-- AFTER SUBMIT START -->
+				<div class="after-submit">
+					<div class="form-container">
+						<h4 class="after-submit__title">Спасибо за Вашу заявку.</h4>
+						<h5 class="after-submit__descr">Наш специалист по танцам в течении часа свяжется с Вами и расскажет о стоимости и расписание занятий, подберет стиль и расскажет подробнее о школе</h5>
+						<br>
+						<h5 class="after-submit__descr"><span style="font-weight: bold;">Также, Вы можете ознакомиться с информацией на нашем сайте, для этого нажмите кнопку ниже</span></h5>
+						<br>
+						<a href="http://www.dancingschool.kiev.ua/" target="_blank" class="link-after">www.dancingschool.kiev.ua</a>
+					</div>
+				</div>
+				<!-- AFTER SUBMIT END -->
+			</div>
+			<!-- ONE-STEP END -->
+		</div>
+	</div>
+	<!-- STEPS END -->
+
+</form>
+
+<script src="test/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	font-family: $regular-font
+	line-height: 1.25
+	overflow-x: hidden
+	color: #000
+	input, textarea, select
+			border: none
+			outline: none
+			&:focus:required:invalid
+				border-color: red
+			&:required:valid
+				border-color: green
+
+img
+	display: block
+	max-width: 100%
+	height: auto
+
+h1, h2, h3, h4, h5
+	font-weight: normal
+
+a
+	outline: none
+
+button
+	cursor: pointer
+	outline: none
+	border: none
+	&:focus
+		outline: none
+
+.content
+	position: relative
+	overflow-x: hidden
+	background-image: url(../img/head_bg.jpg)
+	background-size: cover
+	background-position: center top
+	background-repeat: no-repeat
+
+.head
+	position: relative
+	overflow: hidden
+	padding: 20px 0
+	&__name
+		color: #fff
+		padding-left: 20px
+		border-left: 1px solid #e4e4e4
+		float: left
+		max-width: 220px
+		font-size: 14px
+	&__logo
+		max-width: 150px
+		float: left
+
+.main
+	min-height: calc(100vh - 91px -	91px)
+	&__ttl
+		max-width: 850px
+		font-family: $bold-font
+		font-size: 30px
+		text-transform: uppercase
+		color: #fff
+		margin-bottom: 20px
+		position: relative
+		span
+			color: #000
+			background-color: $accent
+			display: inline-block
+			padding: 0 4px
+			margin: 2px 0
+	&__subttl
+		font-family: $title-bold
+		text-transform: uppercase
+		font-size: 18px
+		color: #000
+		display: table
+		background: #fff
+		padding: 3px 8px
+		margin-bottom: 20px
+	&-list
+		list-style-type: none
+		padding-left: 0
+		margin-bottom: 20px
+		&__li
+			position: relative
+			color: #fff
+			line-height: 20px
+			margin-bottom: 10px
+			padding-left: 40px
+			min-height: 40px
+			&.last
+				margin-bottom: 0
+			i
+				display: block
+				width: 30px
+				height: 30px
+				font-size: 20px
+				line-height: 30px
+				text-align: center
+				font-style: normal
+				background-color: $accent
+				color: #000
+				position: absolute
+				top: 0
+				left: 0
+	&__btn
+		overflow: hidden
+		position: relative
+		display: block
+		max-width: 320px
+		padding: 8px 95px 8px 60px
+		font-size: 22px
+		text-transform: uppercase
+		line-height: 1
+		font-family: $bold-font
+		color: #000
+		border-radius: 40px
+		background-image: -webkit-linear-gradient(90deg,#39b7ea 0,#9ad7f1 100%)
+		&:before
+			content: ''
+			width: 30px
+			height: 30px
+			background-image: url(../img/play-button.svg)
+			background-size: cover
+			position: absolute
+			top: 18px
+			right: 25px
+			transition: all ease .3s
+		&:hover
+			&:before
+				right: 15px
+		&:after
+			content: ""
+			margin-left: 60px
+			width: 30px
+			height: 200px
+			background: #fff
+			animation-delay: 0.05s
+			position: absolute
+			left: -40px
+			top: -50px
+			animation-timing-function: ease-in-out
+			transition: all 0.1s
+			animation-name: slideme
+			animation-duration: 3s
+			animation-iteration-count: infinite
+			transform: rotate(45deg)
+		span
+			display: block
+			font-size: 10px
+			text-align: center
+			margin-top: 5px
+			color: #000
+
+.flex
+	display: flex
+	min-height: calc(100vh - 91px -	91px) 
+	&-content
+		margin: auto
+		width: 100%
+
+.foot
+	padding: 20px 0
+	&__addr
+		font-family: $title-font
+		color: #fff
+		padding-left: 50px
+		position: relative
+		&:before
+			content: ''
+			width: 40px
+			height: 1px
+			background-color: #e4e4e4
+			position: absolute
+			top: 10px
+			left: 0
+	&-soc
+		display: table
+		&__link
+			display: inline-block
+			margin-right: 5px
+			&:last-child
+				margin-right: 0
+	&__phone
+		display: block
+		font-size: 18px
+		line-height: 22px
+		color: #fff
+		margin-bottom: 5px
+
+.thn
+	background-color: #000
+	color: #fff
+	padding: 30px
+	h3
+		font-family: $bold-font
+		text-align: center
+		font-size: 32px
+	p
+		text-align: center
+
+@keyframes slideme
+	0%
+		left: -30px
+		margin-left: 0px
+	30%
+		left: 110%
+		margin-left: 80px
+	100%
+		left: 110%
+		margin-left: 80px
+
+.dev
+	display: table
+	float: right
+	span
+		display: table-cell
+		vertical-align: middle
+		font-size: 12px
+		color: #fff
+		max-width: 140px
+	img
+		float: right
+
+@import "media" // Always at the end
